@@ -17,7 +17,7 @@ function App() {
 
   function Logout() {
     window.localStorage.clear();
-    setAuth(false);
+   
     navigate("/");
   }
 

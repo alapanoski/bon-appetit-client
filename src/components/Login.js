@@ -32,6 +32,7 @@ const handleSubmit = (e) => {
       setLogin(res.data.message);
        window.localStorage.setItem("token", res.data.token);
        window.localStorage.setItem("auth", "true");
+       navigate("/dashboard");
 
     }
    
@@ -55,6 +56,7 @@ const handleSubmitorg = (e) => {
       setLoginorg(res.data.message);
             window.localStorage.setItem("token", res.data.token);
             window.localStorage.setItem("auth", "true");
+             navigate("/dashboard");
     }
    
    console.log(res);
